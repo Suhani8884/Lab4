@@ -1,0 +1,14 @@
+Package: Lab4Assign
+Type: Package
+Title: A Linear Regression package in R
+Version: 1.0
+Date: 2020-09-15
+Author: shwetha ,suhani
+Maintainer: shwetha <shwva184@student.liu.se>, suhani <suhar073@student.liu.se>
+Description: Implement the calculations using ordinary linear algebra or (*) 
+    using the QR decomposition.Implement the results as an S3 class or (*) a RC 
+    class object.Implement a theme() for the graphical profile of Linköping University.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
