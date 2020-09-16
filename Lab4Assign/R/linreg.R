@@ -16,7 +16,7 @@ linreg <-
   R=qr.R(new_qr)
   B=solve(R) %*% t(Q) %*% y                               #Regressions coefficients
   y1 = Q %*% t(Q) %*% y                                   #fitted value
-  e = y*(1 - Q %*% t(Q))                                  # residuals
+  e  = y - y1                                             # residuals
   df = nrow(Q) - ncol(Q)                                  #degrees of freedom
   v= sum((y-y1)^2)/df                                     #residual variance
   v_rc = v * solve(t(R)%*% R)                             #variance of the regression coefficients    

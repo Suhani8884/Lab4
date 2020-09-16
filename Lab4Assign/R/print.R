@@ -1,7 +1,5 @@
-#' This contains the methods for linreg function.
+#' This contains the print methods for linreg function.
 #' 
-#' The available methods are :
-#' print(), plot(), resid(), pred(), coef() and summary()
 #' 
 #' @param x An object of linreg class
 #' @param ... Further arguments passed to or from other methods
