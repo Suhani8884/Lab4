@@ -4,10 +4,10 @@
 \alias{coef.linreg}
 \title{This contains the regression coefficents of linreg function.}
 \usage{
-\method{coef}{linreg}(x, ...)
+\method{coef}{linreg}(object, ...)
 }
 \arguments{
-\item{x}{An object of linreg class}
+\item{object}{An object of linreg class}
 
 \item{...}{Further arguments passed to or from other methods}
 }
