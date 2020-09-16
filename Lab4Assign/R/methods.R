@@ -3,7 +3,8 @@
 #' The available methods are :
 #' print(), plot(), resid(), pred(), coef() and summary()
 #' 
-#' 
+#' @param x An object of linreg class
+#' @param ... Further arguments passed to or from other methods
 #' @export
 
 print.linreg = function(x,...){

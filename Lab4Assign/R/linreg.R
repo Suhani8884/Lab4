@@ -1,6 +1,7 @@
 #' linreg
 #' @param formula A formula.
 #' @param data A data.
+#' @import stats
 #' @description Implementing the calculations for multiple regression model using QR decomposition.
 #' @return The function returns an object of class linreg as an S3 class
 #' @export

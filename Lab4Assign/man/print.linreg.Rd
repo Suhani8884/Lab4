@@ -6,6 +6,11 @@
 \usage{
 \method{print}{linreg}(x, ...)
 }
+\arguments{
+\item{x}{An object of linreg class}
+
+\item{...}{Further arguments passed to or from other methods}
+}
 \description{
 The available methods are :
 print(), plot(), resid(), pred(), coef() and summary()
