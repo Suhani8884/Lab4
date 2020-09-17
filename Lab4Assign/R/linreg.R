@@ -23,7 +23,7 @@ linreg <-
   t_value = as.numeric(B) / as.numeric(sqrt(diag(v_rc)))  #t_value
   p_value <- 2 * pt(t_value, df,lower.tail = FALSE)       #p_value
   lst=list(call,B,y1,e,df,v,v_rc,t_value,p_value)
-  names(lst)=c("call","regression_coefficent","fitted_values","residuals","degrees_of_freedom","residual_variance","variance_reg_coef","t-value","p-value")
+  names(lst)=c("call","regression_coefficent","fitted_values","residuals","degrees_of_freedom","residual_variance","variance_reg_coef","t_value","p_value")
   linreg=structure(lst, class = "linreg")
   return(linreg)
   }
