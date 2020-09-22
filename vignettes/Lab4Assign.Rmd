@@ -1,10 +1,10 @@
 ---
-title: "Report for Lab04 assignment"
+title: "Lab4Assign"
 author: "Group10"
 
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Report}
+  %\VignetteIndexEntry{Lab4Assign}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,7 +16,8 @@ knitr::opts_chunk$set(
 ```
 ## Installation:
 To install the package it's necessary to download it from github.  
-Enter the following line in your console: `devtools::install_github("Suhani8884/Lab4.git")`
+Enter the following line in your console:
+```devtools::install_github("Suhani8884/Lab4.git")
 <!-- 
 ```{r , eval=FALSE}
 devtools::install_github("Suhani8884/Lab4.git")```
@@ -43,21 +44,30 @@ linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
 
 the  resid method returns the vector of residuals e.
 ```{r}
-linreg_mod$resid()
-
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+resid(linreg_mod)
 ```
 ### coef()
 the Coef method  returns the coefficients.
 
 ```{r }
-linreg_mod$coef()
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+coef(linreg_mod)
 
+```
+### Plot
+The plot method returns two plots.One plot with Residuals vs Fitted Values and the other one the Square of Standartized residuals vs Fitted values. 
+
+```{r}
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+plot(linreg_mod)
 ```
 
 ### Print()
 prints the coefficients and coefficient names.
 ```{r}
-linreg_mod$print()
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+print(linreg_mod)
 
 ```
 
@@ -65,14 +75,10 @@ linreg_mod$print()
 returns the coefficients and standard error, t-value and p-value as well as the std Error and the degrees of freedom.
 
 ```{r }
-linreg_mod$summary()
-
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+summary(linreg_mod)
 ```
 
-### Plot function
-```{r}
 
-linreg_mod$plot()
-```
 
 
