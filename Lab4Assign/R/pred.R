@@ -5,7 +5,7 @@
 #' @param ... Further arguments passed to or from other methods
 #' @export
 
-predict.linreg = function(object,...){
+pred.linreg = function(object,...){
   if(length(object$fitted_values)){
     print.default(as.vector(object$fitted_values))
   } else {cat("Fitted values not available \n")}
