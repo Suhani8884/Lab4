@@ -3,6 +3,7 @@
 #' 
 #' @param x An object of linereg class
 #' @param ... Further arguments passed to or from other methods
+#' @import ggplot2
 #' @export
 
 plot.linreg <- function(x,y,...) 
