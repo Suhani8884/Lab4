@@ -1,0 +1,78 @@
+---
+title: "Report for Lab04 assignment"
+author: "Group10"
+
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Report}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Installation:
+To install the package it's necessary to download it from github.  
+Enter the following line in your console: `devtools::install_github("Suhani8884/Lab4.git")`
+<!-- 
+```{r , eval=FALSE}
+devtools::install_github("Suhani8884/Lab4.git")```
+ -->
+ ## Usage:
+
+This package allows the user to create objects in S3, called `linreg`, that consists in an alternative way to implement the linear regression.  
+In order to create the objects, you need to input the formula specified by the user and the dataset to which it refers as parameters.
+
+
+```{r setup}
+library(Lab4Assign)
+library(ggplot2)
+
+```
+## Usage 
+```{r}
+linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+
+```
+## Methods
+
+### resid()
+
+the  resid method returns the vector of residuals e.
+```{r}
+linreg_mod$resid()
+
+```
+### coef()
+the Coef method  returns the coefficients.
+
+```{r }
+linreg_mod$coef()
+
+```
+
+### Print()
+prints the coefficients and coefficient names.
+```{r}
+linreg_mod$print()
+
+```
+
+### summary()
+returns the coefficients and standard error, t-value and p-value as well as the std Error and the degrees of freedom.
+
+```{r }
+linreg_mod$summary()
+
+```
+
+### Plot function
+```{r}
+
+linreg_mod$plot()
+```
+
+
