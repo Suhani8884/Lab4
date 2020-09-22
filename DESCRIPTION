@@ -19,6 +19,6 @@ Suggests:
     ggplot2,
     stats,
     testthat,
-    knitr,rmarkdown,
-VignetteBuilder: knitr
+    knitr,rmarkdown
+VignetteBuilder: knitr,rmarkdown
 

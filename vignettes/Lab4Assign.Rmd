@@ -58,10 +58,10 @@ coef(linreg_mod)
 ### Plot
 The plot method returns two plots.One plot with Residuals vs Fitted Values and the other one the Square of Standartized residuals vs Fitted values. 
 
-```{r}
-linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
-plot(linreg_mod)
-```
+# ```{r}
+# linreg_mod <- linreg(Petal.Length~Sepal.Width+Sepal.Length, data=iris)
+# plot(linreg_mod)
+# ```
 
 ### Print()
 prints the coefficients and coefficient names.
